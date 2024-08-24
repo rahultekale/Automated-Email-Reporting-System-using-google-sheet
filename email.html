@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Weekly Sales Report</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Sales</th>
+          <th>Region</th>
+        </tr>
+      </thead>
+      <tbody>
+        <? for (var i = 0; i < data.length; i++) { ?>
+        <tr>
+          <td><?= data[i][0] ?></td>
+          <td><?= data[i][1] ?></td>
+          <td><?= data[i][2] ?></td>
+        </tr>
+        <? } ?>
+      </tbody>
+    </table>
+  </body>
+</html>
